@@ -37,7 +37,7 @@ header{
 .hombre{
 
   position: absolute;
-  width: 18%;
+  width: 180px;
   bottom: -1%;
   left: 30%;
   transform: translate(-50%, 0%);
@@ -47,7 +47,7 @@ header{
 .luna{
 
   position: absolute;
-  width: 11%;
+  width: 125px;
   top: 3%;
   right: 3%;
   transform: translate(-50%, 0%);
@@ -296,3 +296,12 @@ video {
 }
 
 
+@media (max-width: 600px) {
+
+  .luna{
+
+    width: 90px;
+  
+  }
+  
+}
