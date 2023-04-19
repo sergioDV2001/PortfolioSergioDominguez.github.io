@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  background-color: #012439;
+  color: #e8ede7;
+
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #012439;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #023555;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+header{
+  background:url(images/fondo.png) center center fixed;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hombre{
+
+  position: absolute;
+  width: 180px;
+  bottom: -1%;
+  left: 30%;
+  transform: translate(-50%, 0%);
+
+}
+
+.luna{
+
+  position: absolute;
+  width: 125px;
+  top: 3%;
+  right: 3%;
+  transform: translate(-50%, 0%);
+
+}
+
+/* estrellas */
+
+span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
+  animation:  animate 3s linear infinite;
+}
+span::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+@keyframes animate {
+  0%
+  {
+      transform: rotate(315deg) translateX(0);
+      opacity: 1;
+  }
+  70%
+  {
+      opacity: 1;
+
+  }
+  100%
+  {
+      transform: rotate(315deg) translateX(-1500px);
+      opacity: 0;
+
+  }
+  
+}
+span:nth-child(1){
+  top: 0;
+  right: 0;
+  left:initial;
+  animation-delay:0 ;
+  animation-duration: 2s;
+}
+
+span:nth-child(2){
+  top: 0;
+  right: 80px;
+  left:initial;
+  animation-delay:0.2s;
+  animation-duration: 3s;
+}
+
+span:nth-child(3){
+  top: 80px;
+  right: 0px;
+  left:initial;
+  animation-delay:0.4s ;
+  animation-duration: 2s;
+}
+
+span:nth-child(4){
+  top: 0;
+  right: 180px;
+  left:initial;
+  animation-delay:0.6s;
+  animation-duration: 2s;
+}
+
+span:nth-child(5){
+  top: 0;
+  right: 400px;
+  left:initial;
+  animation-delay:0.8s;
+  animation-duration: 2.5s;
+}
+
+span:nth-child(6){
+  top: 0;
+  right: 600px;
+  left:initial;
+  animation-delay:1s ;
+  animation-duration: 3s;
+}
+span:nth-child(7 ){
+  top: 300px;
+  right: 0px;
+  left:initial;
+  animation-delay:1s ;
+  animation-duration: 2s;
+}
+
+span:nth-child(8){
+  top: 0px;
+  right: 700px;
+  left:initial;
+  animation-delay:1.4s ;
+  animation-duration: 2s;
+}
+
+span:nth-child(9){
+  top: 0px;
+  right: 1000px;
+  left:initial;
+  animation-delay:0.75s ;
+  animation-duration: 2.25s;
+}
+
+span:nth-child(10){
+  top: 0px;
+  right: 1000px;
+  left:initial;
+  animation-delay:2.75s ;
+  animation-duration: 2.25s;
+}
+
+/* estrellas */
+
+
+
+
+
+.linkNavbar, .linkNavbar:hover, .linkNavbar:active{
+
+  outline: none;
+  text-decoration: none;
+  color: #e8ede7;
+
+
+}
+
+.nombre__margen{
+
+  margin-top: 4%;
+  margin-bottom: 10%;
+
+}
+
+.trabajos__margen{
+
+  padding-top: 8%;
+  padding-bottom: 9%;
+  
+
+}
+
+i{
+
+  color: #036280;
+
+}
+
+.seccion-secundaria{
+
+  box-shadow: 
+  inset 0px 20px 8px -10px #0000007a,
+  inset 0px -20px 8px -10px #0000007a; 
+  background-color: #012a43;
+
+}
+
+/* BOTON CSS */
+
+.botonDefault {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4.2rem;
+  text-decoration: none;
+  color: white;
+  background-color: #036280;
+  border: 2px solid #036280;
+  font-weight: 400;
+  transition: 400ms;
+}
+
+.botonDefault:hover {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4.2rem;
+  text-decoration: none;
+  color: #036280;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #036280;
+  font-weight: 400;
+}
+
+/* BOTON CSS */
+
+.borde {
+  border: solid 1px black;
+}
+
+.centrarVideo {
+  object-fit: cover;
+
+}
+
+video {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.textoAbout {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.subrayado {
+  height: 2px;
+  width: 13%;
+  background-color: #036280;
+}
+
+.circulo {
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #036280;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+
+.logo {
+  transition: all .2s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 600px) {
+
+  .luna{
+
+    width: 90px;
+  
+  }
+  
+}
